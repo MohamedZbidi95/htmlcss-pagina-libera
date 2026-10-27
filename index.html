@@ -44,7 +44,9 @@
             <li><strong>JavaScript</strong></li>
         </ol>
 
-        <!-- Tabella: tr = riga, th = cella di intestazione, td = cella normale -->
+        <!-- Tabella: tr = riga, th = cella di intestazione, td = cella normale
+             Ticket #5: class="status" SOLO sulle tre celle dello stato,
+             NON sull'intestazione "Stato" (th) → testo verde nel CSS -->
         <table>
             <tr>
                 <th>Argomento</th>
@@ -54,17 +56,17 @@
             <tr>
                 <td>HTML</td>
                 <td>L05</td>
-                <td>Fatto</td>
+                <td class="status">Fatto</td>
             </tr>
             <tr>
                 <td>CSS</td>
                 <td>L06-L15</td>
-                <td>In corso</td>
+                <td class="status">In corso</td>
             </tr>
             <tr>
                 <td>JavaScript</td>
                 <td>L16-L30</td>
-                <td>Da fare</td>
+                <td class="status">Da fare</td>
             </tr>
         </table>
 
@@ -82,8 +84,10 @@
         <img src="./img/visual-studio-code-logo.webp" alt="Logo di Visual Studio Code" class="page-img">
         <img src="https://picsum.photos/300/200" alt="Foto di esempio" class="page-img">
 
-        <!-- Sezione contatti con form: input, textarea, button -->
-        <section>
+        <!-- Sezione contatti con form: input, textarea, button
+             Ticket #6: id="contact" sulla SECTION (non sul form), perché
+             deve comprendere anche il titolo h2 → sfondo bianco e bordo nel CSS -->
+        <section id="contact">
             <h2>Scrivimi un messaggio</h2>
             <form>
                 <input type="text" placeholder="Il tuo nome">

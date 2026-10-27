@@ -9,8 +9,8 @@
    EREDITANO il font (inheritance).
    Font stack: arial, se manca → sans-serif (fallback). */
 body {
-    background-color: #f2f2f2;
-    font-family: arial, sans-serif;
+   background-color: #f2f2f2;
+   font-family: arial, sans-serif;
 }
 
 /* TICKET #2 e #3 – Header e footer
@@ -19,8 +19,8 @@ body {
    una sola regola per due elementi → principio DRY. */
 header,
 footer {
-    background-color: #2c3e50;
-    color: #fff;
+   background-color: #2c3e50;
+   color: #fff;
 }
 
 /* TICKET #2b – I link dell'header
@@ -30,7 +30,7 @@ footer {
    non viene ereditato.
    Selezione: descendant combinator con lo SPAZIO → le "a" DENTRO l'header. */
 header a {
-    color: #fff;
+   color: #fff;
 }
 
 /* TICKET #4 – Le due immagini (logo e foto)
@@ -39,5 +39,26 @@ header a {
    class perché gli elementi sono DUE (id = uno solo).
    width = misura esatta; max-width = solo un limite massimo. */
 .page-img {
-    width: 300px;
+   width: 300px;
 }
+
+/* TICKET #5 – Le celle dello "Stato" nella tabella
+   Obiettivo: testo verde su "Fatto", "In corso", "Da fare".
+   Selezione: class selector ".status" (PUNTO = class),
+   class perché le celle sono TRE.
+   L'intestazione "Stato" (th) NON ha la class: resta nera.
+   Nome: descrive COSA sono le celle (lo stato), non il colore. */
+.status {
+   color: green;
+}
+
+/* TICKET #6 – La sezione dei contatti
+   Obiettivo: sfondo bianco e bordo grigio chiaro intorno a
+   tutta la sezione, titolo "Scrivimi un messaggio" compreso.
+   Selezione: id selector "#contact" (CANCELLETTO = id),
+   id perché nella pagina c'è UNA sola sezione contatti.
+   L'id è sulla section e non sul form, perché il titolo h2
+   sta nella section ma FUORI dal form.
+   Bordo: servono spessore + tipo di linea + colore,
+   senza il tipo di linea il bordo non compare (default: none). */
+#contact {
