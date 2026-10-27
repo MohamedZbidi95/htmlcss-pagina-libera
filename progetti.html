@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="it">
+
+<!-- =========================================================
+     htmlcss-pagina-libera – progetti.html (seconda pagina)
+     Richiesta del prof (Fase I): "create una seconda pagina html
+     e collegatela alla prima"
+     ========================================================= -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I miei progetti</title>
+    <!-- External CSS: stesso file di index.html -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <!-- RiCORDA: la struttura di una pagina HTML è composta da tre sezioni principali:-->
-    <!--header	titolo (h1), logo, menu (nav)-->
-    <!--main	il contenuto: testi, liste, tabelle, section, form-->
-    <!--footer	copyright, contatti -->
+    <!-- HEADER: stesso menu di index.html, per navigare tra le due pagine -->
     <header>
         <h1>I miei progetti</h1>
         <nav>
@@ -18,8 +24,10 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="progetti.html">Progetti</a></li>
             </ul>
-        </nav>  
+        </nav>
     </header>
+
+    <!-- MAIN: elenco dei progetti, con link ASSOLUTI ai repository GitHub -->
     <main>
         <p>In questa pagina puoi trovare alcuni dei miei progetti realizzati durante il corso di sviluppo web.</p>
         <ul>
@@ -27,5 +35,13 @@
             <li><a href="https://github.com/MohamedZbidi95/htmlcss-wireframe">Wireframe card</a></li>
         </ul>
     </main>
-</body>        
+    <!-- FOOTER: contatti e copyright (dati finti: il repo è pubblico) -->
+    <footer>
+        <h2>Contattami</h2>
+        <p>Email: nome@esempio.com</p>
+        <p>Telefono: +39 000 000 0000</p>
+        <p>© 2026 Mohamed Zbidi</p>
+    </footer>
+</body>
+
 </html>
