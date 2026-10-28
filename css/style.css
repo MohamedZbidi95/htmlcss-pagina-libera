@@ -42,16 +42,6 @@ header a {
    width: 300px;
 }
 
-/* TICKET #5 – Le celle dello "Stato" nella tabella
-   Obiettivo: testo verde su "Fatto", "In corso", "Da fare".
-   Selezione: class selector ".status" (PUNTO = class),
-   class perché le celle sono TRE.
-   L'intestazione "Stato" (th) NON ha la class: resta nera.
-   Nome: descrive COSA sono le celle (lo stato), non il colore. */
-.status {
-   color: green;
-}
-
 /* TICKET #6 – La sezione dei contatti
    Obiettivo: sfondo bianco e bordo grigio chiaro intorno a
    tutta la sezione, titolo "Scrivimi un messaggio" compreso.
@@ -81,4 +71,40 @@ header a {
    Span perché è INLINE: colora solo due parole e resta nella riga. */
 .highlight {
    color: #2c3e50;
+}
+
+/* TICKET #5 + #12 – Le celle dello "Stato" nella tabella
+   Ogni cella ha DUE class nell'HTML, separate da uno SPAZIO:
+   "status" (comune) + una class MODIFIER (diversa per ogni stato).
+
+   .status = stile COMUNE a tutte e tre: solo il grassetto.
+   Il colore NON va qui: verrebbe sempre sovrascritto dai modifier
+   (stessa specificity → vince la regola più in basso) = dead code. */
+.status {
+   font-weight: bold;
+}
+
+/* Modifier: un colore DIVERSO per ogni stato.
+   Nome = class di base + trattino + variante (status-done...). */
+.status-done {
+   color: green;
+}
+
+.status-progress {
+   color: orange;
+}
+
+.status-todo {
+   color: red;
+}
+
+/* TICKET #13 – La tabella dello studio
+   Obiettivo: bordo, larghezza piena e testo centrato.
+   Selezione: class selector ".study-table" (class aggiunta nell'HTML).
+   Nome: NON "table", perché .table e table si confondono;
+   "study-table" descrive COSA è la tabella. */
+.study-table {
+   border: 1px solid black;
+   width: 100%;
+   text-align: center;
 }

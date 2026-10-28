@@ -47,9 +47,12 @@
         </ol>
 
         <!-- Tabella: tr = riga, th = cella di intestazione, td = cella normale
-             Ticket #5: class="status" SOLO sulle tre celle dello stato,
-             NON sull'intestazione "Stato" (th) → testo verde nel CSS -->
-        <table>
+             Ticket #13: class="study-table" sulla tabella → bordo, larghezza e centratura nel CSS
+             Ticket #12: ogni cella dello stato ha DUE class, separate da uno spazio:
+               - "status" = stile COMUNE (grassetto)
+               - "status-done / -progress / -todo" = MODIFIER, colore DIVERSO per ogni stato
+             L'intestazione "Stato" (th) non ha class. -->
+        <table class="study-table">
             <tr>
                 <th>Argomento</th>
                 <th>Lezioni</th>
@@ -58,17 +61,17 @@
             <tr>
                 <td>HTML</td>
                 <td>L05</td>
-                <td class="status">Fatto</td>
+                <td class="status status-done">Fatto</td>
             </tr>
             <tr>
                 <td>CSS</td>
                 <td>L06-L15</td>
-                <td class="status">In corso</td>
+                <td class="status status-progress">In corso</td>
             </tr>
             <tr>
                 <td>JavaScript</td>
                 <td>L16-L30</td>
-                <td class="status">Da fare</td>
+                <td class="status status-todo">Da fare</td>
             </tr>
         </table>
 
