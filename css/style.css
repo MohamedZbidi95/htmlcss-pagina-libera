@@ -62,3 +62,23 @@ header a {
    Bordo: servono spessore + tipo di linea + colore,
    senza il tipo di linea il bordo non compare (default: none). */
 #contact {
+   background-color: white;
+   border: 1px solid #D3D3D3;
+}
+
+/* TICKET #9 – Contenitore delle immagini
+   Obiettivo: le due immagini centrate nella pagina.
+   Selezione: class selector ".box-img" sul DIV che le contiene.
+   text-align centra le immagini perché sono INLINE, come il testo.
+   (align-items NON funziona qui: è Flexbox, L09) */
+.box-img {
+   text-align: center;
+}
+
+/* TICKET #9 – Parole evidenziate
+   Obiettivo: "sviluppatore web" in blu scuro, come l'header.
+   Selezione: class selector ".highlight" sullo SPAN.
+   Span perché è INLINE: colora solo due parole e resta nella riga. */
+.highlight {
+   color: #2c3e50;
+}
