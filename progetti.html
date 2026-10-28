@@ -30,10 +30,22 @@
     <!-- MAIN: elenco dei progetti, con link ASSOLUTI ai repository GitHub -->
     <main>
         <p>In questa pagina puoi trovare alcuni dei miei progetti realizzati durante il corso di sviluppo web.</p>
-        <ul>
-            <li><a href="https://github.com/MohamedZbidi95/htmlcss-pagina-libera">Pagina libera</a></li>
-            <li><a href="https://github.com/MohamedZbidi95/htmlcss-wireframe">Wireframe card</a></li>
-        </ul>
+
+        <!-- Ticket #11: ARTICLE = contenuto INDIPENDENTE, ha senso anche da solo
+             (se lo copio in un altro sito si capisce lo stesso).
+             Ogni progetto è una scheda: titolo + descrizione + link.
+             Gli article stanno DENTRO il main, perché sono contenuto. -->
+        <article>
+            <h2>Pagina libera</h2>
+            <p>La mia prima pagina web, con HTML e CSS scritti da zero.</p>
+            <p><a href="https://github.com/MohamedZbidi95/htmlcss-pagina-libera">Vedi il repository</a></p>
+        </article>
+
+        <article>
+            <h2>Wireframe card</h2>
+            <p>Un layout a card, riprodotto da un wireframe con il box model.</p>
+            <p><a href="https://github.com/MohamedZbidi95/htmlcss-wireframe">Vedi il repository</a></p>
+        </article>
     </main>
 
     <!-- FOOTER: stesso footer di index.html (consistency tra le pagine)
