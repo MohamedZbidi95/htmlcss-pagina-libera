@@ -70,6 +70,16 @@
             </tr>
         </table>
 
+        <!-- Ticket #7: titoli da h3 a h6 (headings)
+             Parte da h3 perché sta dentro la sezione "Cosa sto studiando" (h2).
+             Gerarchia: ogni livello è dentro quello prima, nessun livello saltato.
+             Il tag indica l'IMPORTANZA, la grandezza si cambia con il CSS. -->
+        <h3>Cosa ho imparato finora</h3>
+        <h4>HTML</h4>
+        <h5>La struttura della pagina</h5>
+        <h6>I tag semantici</h6>
+        <p>Header, main e footer dividono la pagina in tre parti: l’intestazione, il contenuto e il piè di pagina.</p>
+
         <p>Gli strumenti che uso ogni giorno sono:</p>
 
         <!-- Lista non ordinata -->
@@ -83,6 +93,11 @@
              Ticket #4: class="page-img" su tutte e due → stessa larghezza nel CSS -->
         <img src="./img/visual-studio-code-logo.webp" alt="Logo di Visual Studio Code" class="page-img">
         <img src="https://picsum.photos/300/200" alt="Foto di esempio" class="page-img">
+
+        <!-- Ticket #8: hr = thematic break (void element)
+             Separa la parte sul mio PERCORSO dalla parte dei CONTATTI:
+             segna un cambio di argomento, non serve per fare spazio. -->
+        <hr>
 
         <!-- Sezione contatti con form: input, textarea, button
              Ticket #6: id="contact" sulla SECTION (non sul form), perché
@@ -98,11 +113,12 @@
         </section>
     </main>
 
-    <!-- FOOTER: contatti e copyright (dati finti: il repo è pubblico) -->
+    <!-- FOOTER: contatti e copyright (dati finti: il repo è pubblico)
+         Ticket #8: email e telefono in UN solo paragrafo con <br> (line break),
+         perché sono la STESSA informazione; il copyright è un paragrafo a parte. -->
     <footer>
         <h2>Contattami</h2>
-        <p>Email: nome@esempio.com</p>
-        <p>Telefono: +39 000 000 0000</p>
+        <p>Email: nome@esempio.com<br>Telefono: +39 000 000 0000</p>
         <p>© 2026 Mohamed Zbidi</p>
     </footer>
 </body>
